@@ -17,5 +17,8 @@
         ,"src/GameLayer.js"
         ,"src/Karto.js"
         ,"src/State.js"
+        ,"src/shuffle.js"
+        ,"res/data.js"
+
     ]
 }

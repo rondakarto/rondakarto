@@ -63,7 +63,7 @@
  * @property {Number}       shadowOpacity   - The opacity of shadow
  * @property {Number}       shadowBlur      - The blur size of shadow
  */
-cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
+ cc.LabelTTF = cc.Sprite.extend(/** @lends cc.LabelTTF# */{
     _dimensions: null,
     _hAlignment: cc.TEXT_ALIGNMENT_CENTER,
     _vAlignment: cc.VERTICAL_TEXT_ALIGNMENT_TOP,

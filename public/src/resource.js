@@ -1,16 +1,16 @@
 var res = {
     back : 'res/back.png'
-    ,_0 : "res/0.png"
-    ,_1 : "res/1.png"
-    ,_2 : "res/2.png"
-    ,_3 : "res/3.png"
-    ,_4 : "res/4.png"
-    ,_5 : "res/5.png"
-    ,_6 : "res/6.png"
-    ,_7 : "res/7.png"
-    ,_8 : "res/8.png"
-    ,_9 : "res/9.png"
-    ,_10 : "res/10.png"
+    ,0 : "res/0.png"
+    ,1 : "res/1.png"
+    ,2 : "res/2.png"
+    ,3 : "res/3.png"
+    ,4 : "res/4.png"
+    ,5 : "res/5.png"
+    ,6 : "res/6.png"
+    ,7 : "res/7.png"
+    ,8 : "res/8.png"
+    ,9 : "res/9.png"
+    ,10 : "res/10.png"
 };
 
 var g_resources = [];
