@@ -136,7 +136,8 @@ var StateWin = {
         g_score ++;
         g_scoreText.setString( 'Score: ' + g_score );
 
-        this.text = new cc.LavelTTF( 'YOU WIN', 'Arial', '50' );
+        var size = cc.winSize;
+        this.text = new cc.LabelTTF( 'YOU WIN', 'Arial', '50' );
         this.text.setPosition( size.width/2, size.heigth/2);
         g_gameLayer.addChild(this.text);
 
@@ -154,7 +155,8 @@ var StateLoose = {
         if( g_score < 0 ) {
             g_score = 0;
         }
-        this.text = new cc.LavelTTF( 'YOU LOOSE', 'Arial', '50' );
+        var size = cc.winSize;
+        this.text = new cc.LabelTTF( 'YOU LOOSE', 'Arial', '50' );
         this.text.setPosition( size.width/2, size.heigth/2);
         g_gameLayer.addChild(this.text);
 
@@ -168,7 +170,8 @@ var StateLoose = {
 var StateDraw = {
     text : null,
     onEnter : function(){
-        this.text = new cc.LavelTTF( 'DRAW', 'Arial', '50' );
+        var size = cc.winSize;
+        this.text = new cc.LabelTTF( 'DRAW', 'Arial', '50' );
         this.text.setPosition( size.width/2, size.heigth/2);
         g_gameLayer.addChild(this.text);
 

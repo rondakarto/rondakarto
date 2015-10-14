@@ -33,7 +33,7 @@ var GameLayer = cc.Layer.extend({
         });
         this.addChild(g_right, 0);
 
-        g_scoreText = new cc.LavelTTF( 'Score: 0', 'Arial', '20' );
+        g_scoreText = new cc.LabelTTF( 'Score: 0', 'Arial', '20' );
         g_scoreText.setPosition( size.width/8*4, size.heigth/8*4);
         this.addChild(g_scoreText);
 
