@@ -4,8 +4,8 @@ var g_state;
 var g_myCard;
 var g_theOther;
 var g_event;
-var g_eventText;
-var g_score;
+var g_eventText = null;
+var g_score = 0;
 var g_scoreText;
 
 

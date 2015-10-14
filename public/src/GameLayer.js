@@ -5,17 +5,14 @@ var GameLayer = cc.Layer.extend({
         this._super();
 
         var gradient = new cc.LayerGradient( cc.color(0,0,0,255),cc.color(0,102,51,255));
-        this.addChild(gradient);
+        //this.addChild(gradient);
 
         // ask the window size
         var size = cc.winSize;
 
-        var helloLabel = new cc.LabelTTF("RONDA KARTO", "Arial", 38);
-        // position the label on the center of the screen
-        helloLabel.x = size.width / 2;
-        helloLabel.y = size.height / 2 + 200;
-        // add the label as a child to this layer
-        this.addChild(helloLabel, 5);
+        var helloLabel = new cc.LabelTTF("RONDA KARTO", "Arial", 20);
+        helloLabel.setPosition( size.width/2, size.height/8*7);
+        this.addChild(helloLabel);
 
         g_left = new Karto();
         g_left.left = true;
@@ -34,7 +31,7 @@ var GameLayer = cc.Layer.extend({
         this.addChild(g_right, 0);
 
         g_scoreText = new cc.LabelTTF( 'Score: 0', 'Arial', '20' );
-        g_scoreText.setPosition( size.width/8*4, size.heigth/8*4);
+        g_scoreText.setPosition( size.width/8*7, size.height/8*7);
         this.addChild(g_scoreText);
 
         g_state = null;

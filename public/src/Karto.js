@@ -35,10 +35,11 @@ var Karto = cc.Sprite.extend({
             }
             this.initWithFile( res[ d.name ] );
 
-            var st,stt;
+            var st =''
+            var stt;
             var str = typeof( d[g_event] )
             if( str === 'number'){
-                st = d[g_event];
+                st += d[g_event];
                 stt = st;
             }
             else {
