@@ -11,12 +11,11 @@ var Karto = cc.Sprite.extend({
     stat : null,
     change : function( order ){
         if(this.statText) {
-            g_gameLayer.removeChild(this.statText);
+            game.textLayer.removeChild(this.statText);
         }
+
         if( order == 0 ) {
             this.initWithFile ( res.back );
-            this.statText = null;
-            this.stat = null;
         }
         else {
             var d;
@@ -35,21 +34,23 @@ var Karto = cc.Sprite.extend({
             }
             this.initWithFile( res[ d.name ] );
 
-            var st =''
             var stt;
-            var str = typeof( d[g_event] )
-            if( str === 'number'){
-                st += d[g_event];
-                stt = st;
+            var type = typeof( d[game.event] );
+            if( type === 'number'){
+                this.stat = d[game.event];
+                stt = this.stat.toString();
             }
             else {
-                st = d[g_event].value;
-                stt = d[g_event].name;
+                this.stat = d[game.event].value;
+                stt = d[game.event].name;
             }
-            this.stat = st;
-            this.statText = new cc.LabelTTF( stt, 'Arial', 16 );
-            g_gameLayer.addChild( this.statText );
+
+            if( this.statText == null ) {
+                this.statText = new cc.LabelTTF( '', 'Arial', 16 );
+            }
+            this.statText.setString( stt );
             this.statText.setPosition( x, y );
+            game.textLayer.addChild( this.statText );
         }
 
     }

@@ -1,15 +1,20 @@
-var g_left;
-var g_right;
-var g_state;
-var g_myCard;
-var g_theOther;
-var g_event;
-var g_eventText = null;
-var g_score = 0;
-var g_scoreText;
 
 
-var g_gameLayer;
+var game = {
+    gameLayer : null
+    ,textLayer : null
+    ,leftCard : null
+    ,rightCard : null
+    ,myCard : null
+    ,otherCard : null
+    ,myOrder : 0
+    ,otherOrder : 0
+    ,event : null
+    ,eventText : null
+    ,score : null
+    ,scoreText : null
+    ,state : null
+};
 
 
 

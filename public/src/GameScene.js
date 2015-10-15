@@ -1,8 +1,13 @@
 var GameScene = cc.Scene.extend({
     onEnter:function () {
         this._super();
-        g_gameLayer = new GameLayer();
-        g_gameLayer.init();
-        this.addChild(g_gameLayer);
+        game.gameLayer = new GameLayer();
+        game.gameLayer.init();
+        this.addChild( game.gameLayer );
+        game.textLayer = new TextLayer();
+        game.textLayer.init();
+        this.addChild( game.textLayer );
+        game.gameLayer.start();
+
     }
 });

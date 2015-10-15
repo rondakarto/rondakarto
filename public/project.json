@@ -19,6 +19,6 @@
         ,"src/State.js"
         ,"src/shuffle.js"
         ,"res/data.js"
-
+        ,"src/TextLayer.js"
     ]
 }

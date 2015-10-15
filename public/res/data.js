@@ -1,8 +1,8 @@
 EVENT = [
-    'fashion',
-    'people',
-    'char',
-    'war'
+    'people'
+    ,'char'
+    ,'war'
+    ,'fashion'
 ];
 
 
